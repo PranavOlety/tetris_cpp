@@ -1,0 +1,25 @@
+
+// DOWNLOAD THIS directory, (make it a git repo if you are not able to run things) 
+
+a. How to install any dependencies your software requires.
+    1. Install SFML for linux https://www.sfml-dev.org/tutorials/2.5/start-linux.php (I developed the game on WSL)
+    2. Run the command “make all” for compiling the binaries  and "make test" to make the test
+
+b. How to compile your code with g++ (include the exact terminal command,
+not an IDE configuration).
+    1. The code is in the makefile and can be compiled using the makefile 
+
+c. How to run your code, including a brief description of what should happen
+when we run your code (e.g., should a GUI window open?) will it spend
+more than a few minutes processing data?
+    1. Run ./tetris.exe 
+    2. You will be prompted to a menu welcoming you to TETRIS_CPP 
+    3. You will then be prompted to select your difficulty (whether easy, difficult, or hard) 
+    4. (You will be prompted again if not e,d, or h) 
+    5. The game window will open and you can move your piece left, right, down, or placed down (space bar),
+       as well as rotate (using the up arrow key) 
+    6. Once your pile reaches to the top, the game will be over and you will be told your score and the lines cleared
+
+
+
+ALL screenshots and the video are in this folder, watch the video without volume (it has random noise): It shows lines being cleared

@@ -228,7 +228,7 @@ int main()
     }
 
     std::cout << "Your Score was " << game.get_score() << std::endl;
-    std::cout << "You cleared " << game.lines_cleared_count() << " lines" << std::endl;
+    std::cout << "You cleared " << game.lines_cleared_count() << " line(s)" << std::endl;
 
     return 0;
 }
