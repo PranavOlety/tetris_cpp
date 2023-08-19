@@ -15,7 +15,7 @@ namespace tetris
     // this is a map of all the colors, the board keeps of track of the corresponding number
     // for color purposes, I think this was an interesting choice, perhaps I could have represented
     // it in the pieces, but that would require a rewrite of a few other functions (line_clearing, etc)
-    inline std::unordered_map<int, sf::Color> colors = {
+    const std::unordered_map<int, sf::Color> colors = {
         {1, sf::Color::Yellow},
         {2, sf::Color::Cyan},
         {3, sf::Color::Green},
@@ -25,49 +25,49 @@ namespace tetris
         {7, sf::Color::Blue}};
 
     // O
-    inline std::vector<std::vector<int>> O_SHAPE = {
+    const std::vector<std::vector<int>> O_SHAPE = {
         {0, 0, 0, 0},
         {0, 1, 1, 0},
         {0, 1, 1, 0},
         {0, 0, 0, 0}};
 
     // I
-    inline std::vector<std::vector<int>> I_SHAPE = {
+    const std::vector<std::vector<int>> I_SHAPE = {
         {0, 0, 0, 0},
         {1, 1, 1, 1},
         {0, 0, 0, 0},
         {0, 0, 0, 0}};
 
     // L
-    inline std::vector<std::vector<int>> S_SHAPE = {
+    const std::vector<std::vector<int>> S_SHAPE = {
         {0, 0, 0, 0},
         {0, 1, 1, 0},
         {1, 1, 0, 0},
         {0, 0, 0, 0}};
 
     // Z
-    inline std::vector<std::vector<int>> Z_SHAPE = {
+    const std::vector<std::vector<int>> Z_SHAPE = {
         {0, 0, 0, 0},
         {1, 1, 0, 0},
         {0, 1, 1, 0},
         {0, 0, 0, 0}};
 
     // T
-    inline std::vector<std::vector<int>> T_SHAPE = {
+    const std::vector<std::vector<int>> T_SHAPE = {
         {0, 0, 0, 0},
         {1, 1, 1, 0},
         {0, 1, 0, 0},
         {0, 0, 0, 0}};
 
     // L
-    inline std::vector<std::vector<int>> L_SHAPE = {
+    const std::vector<std::vector<int>> L_SHAPE = {
         {0, 0, 0, 0},
         {1, 1, 1, 0},
         {1, 0, 0, 0},
         {0, 0, 0, 0}};
 
     // J
-    inline std::vector<std::vector<int>> J_SHAPE = {
+    const std::vector<std::vector<int>> J_SHAPE = {
         {0, 0, 0, 0},
         {1, 1, 1, 0},
         {0, 0, 1, 0},
@@ -76,7 +76,7 @@ namespace tetris
     // The shapes map allows me to quickly get the shape I want based on the number
     // I believe I would optimize this to be a struct of color and shape in the future
     // to couple state together
-    inline std::unordered_map<int, std::vector<std::vector<int>>> shapes = {
+    const std::unordered_map<int, const std::vector<std::vector<int>>> shapes = {
         {1, O_SHAPE},
         {2, I_SHAPE},
         {3, S_SHAPE},

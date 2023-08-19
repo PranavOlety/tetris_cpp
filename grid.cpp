@@ -33,7 +33,7 @@ namespace tetris
     b_x = std::rand() % (m_width - 4);
     b_y = 0;
 
-    current_piece = shapes[block];
+    current_piece = shapes.at(block);
   }
   bool GameBoard::in_bounds()
   {

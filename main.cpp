@@ -204,7 +204,7 @@ int main()
                 int cellValue = game.getGameState()[y][x];
                 if (cellValue)
                 {
-                    drawCellWithBorder(window, x, y, tetris::colors[cellValue]);
+                    drawCellWithBorder(window, x, y, tetris::colors.at(cellValue));
                 }
             }
         }
@@ -217,7 +217,7 @@ int main()
                 {
                     int drawX = game.b_x + x;
                     int drawY = game.b_y + y;
-                    drawCellWithBorder(window, drawX, drawY, tetris::colors[game.getBlock()]);
+                    drawCellWithBorder(window, drawX, drawY, tetris::colors.at(game.getBlock()));
                 }
             }
         }
