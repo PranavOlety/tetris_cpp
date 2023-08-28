@@ -35,7 +35,7 @@ TEST(TestGenerateNewPiece)
     {
         for (int x = 0; x < 4; ++x)
         {
-            ASSERT_EQUAL(tetris::shapes[piece][y][x], board.get_current_shape()[y][x]);
+            ASSERT_EQUAL(tetris::shapes.at(piece)[y][x], board.get_current_shape()[y][x]);
         }
     }
 }

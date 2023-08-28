@@ -158,29 +158,28 @@ int main()
             // keyboard interrupt
             if (e.type == sf::Event::KeyReleased)
             {
-                if (e.key.code == sf::Keyboard::Left)
+                if (e.key.code == sf::Keyboard::Left or e.key.code == sf::Keyboard::A)
                 {
                     --game.b_x;
                     if (!game.in_bounds())
                         ++game.b_x;
                 }
-                else if (e.key.code == sf::Keyboard::Right)
+                else if (e.key.code == sf::Keyboard::Right or e.key.code == sf::Keyboard::D)
                 {
                     ++game.b_x;
                     if (game.in_bounds() == false)
                         --game.b_x;
                 }
-                else if (e.key.code == sf::Keyboard::Down)
+                else if (e.key.code == sf::Keyboard::Down or e.key.code == sf::Keyboard::S)
                 {
                     game.move_down();
                 }
                 else if (e.key.code == sf::Keyboard::Space)
                 {
                     // fall down until reaches the bottom
-                    while (game.move_down() == true)
-                        ;
+                    while (game.move_down() == true);
                 }
-                else if (e.key.code == sf::Keyboard::Up)
+                else if (e.key.code == sf::Keyboard::Up or e.key.code == sf::Keyboard::W)
                 {
                     game.rotate();
 

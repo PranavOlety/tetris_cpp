@@ -14,8 +14,8 @@ when we run your code (e.g., should a GUI window open?) will it spend
 more than a few minutes processing data?
     1. Run ./tetris.exe 
     2. You will be prompted to a menu welcoming you to TETRIS_CPP 
-    3. You will then be prompted to select your difficulty (whether easy, difficult, or hard) 
-    4. (You will be prompted again if not e,d, or h) 
+    3. You will then be prompted to select your difficulty (whether easy, medium, or hard) 
+    4. (You will be prompted again if not e,m, or h) 
     5. The game window will open and you can move your piece left, right, down, or placed down (space bar),
        as well as rotate (using the up arrow key) 
     6. Once your pile reaches to the top, the game will be over and you will be told your score and the lines cleared
